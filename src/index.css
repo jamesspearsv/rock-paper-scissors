@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* Game element gradients */
+  --gradient-scissors: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  --gradient-paper: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  --gradient-rock: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+
+  /* neutral colors */
+  --color-dark-grey: hsl(229, 25%, 31%);
+  --color-blue: hsl(229, 64%, 46%);
+  --color-light-grey: hsl(217, 16%, 45%);
+
+  /* background gradient */
+  --gradient-background: radial-gradient(
+    circle,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%) 50%
+  );
+
+  /* fonts */
+  --font-family: 'Barlow Semi Condensed', sans-serif;
+  --weight-normal: 600;
+  --weight-bold: 700;
+}
+
+* {
+  font-family: var(--font-family);
+  font-weight: var(--weight-normal);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* app background gradient */
+  min-height: 100dvh;
+  background-image: radial-gradient(
+    circle at top,
+    hsl(214, 47%, 23%) 0%,
+    hsl(237, 49%, 15%) 100%
+  );
+}
+
+/* CSS RESET */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
