@@ -1,0 +1,21 @@
+.tokenContainer {
+  border-radius: 100%;
+  border: none;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tokenImage {
+  --size: 80%;
+  background-color: white;
+  border: none;
+  border-radius: 100%;
+  height: var(--size);
+  width: var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
